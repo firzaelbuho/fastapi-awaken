@@ -9,6 +9,7 @@ CREATE TABLE character (
 CREATE TABLE primoid_category (
   primoid_category_id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   name VARCHAR(100) NOT NULL,
+  rank VARCHAR(1),
   alternate_name VARCHAR(100),
   description TEXT,
   handling TEXT
