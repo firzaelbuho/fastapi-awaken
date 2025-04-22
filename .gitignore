@@ -1,0 +1,48 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.envrc
+*.env
+
+# Editor & IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs
+*.log
+
+# Pytest / coverage
+.coverage
+.tox/
+htmlcov/
+.cache/
+
+# mypy / lint
+.mypy_cache/
+.dmypy.json
+.pyre/
+ruff_cache/
+
+# Local dev db, sqlite, etc
+*.sqlite3
+*.db
+
+# FastAPI auto-generated docs (optional)
+openapi.json
+
+# System files
+.DS_Store
+Thumbs.db

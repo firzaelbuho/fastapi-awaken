@@ -1,22 +1,21 @@
 from sqlalchemy import Column, Integer, String
 from config.database import Base
+from pydantic import BaseModel
 
 
-class DemoModel(Base):
-    __tablename__ = "demo"
-
+class PrimoidModel(Base):
+    __tablename__ = "primoid"
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, index=True)
 
 
-from pydantic import BaseModel
-
-class DemoSchema(BaseModel):
+class PrimoidSchema(BaseModel):
     id: int
     name: str
 
     class Config:
-        from_attributes = True  # Untuk mendukung ORM (SQLAlchemy)
+        from_attributes = True
 
-class DemoCreateSchema(BaseModel):
+
+class PrimoidCreateSchema(BaseModel):
     name: str
